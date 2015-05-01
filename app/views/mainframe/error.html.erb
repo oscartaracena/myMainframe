@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<Head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container"><b>
+You have Entered invalid data, we are collecting the following information you:<br><br>
+<script type="text/javascript">
+  var userip;
+</script>
+
+<script type="text/javascript" src="http://l2.io/ip.js?var=userip"></script>
+
+<script type="text/javascript">
+  document.write("Your IP is :", userip);
+</script><br>
+<br><div id="demo"></div>
+<a href="/" class="btn btn-info btn-lg">
+  <span class="glyphicon glyphicon-log-out"></span> Home Page
+</a>
+</p>
+
+<script>
+var txt = "";
+txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt += "<p>Browser Name: " + navigator.appName + "</p>";
+txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt += "<p>Browser Language: " + navigator.language + "</p>";
+txt += "<p>Browser Online: " + navigator.onLine + "</p>";
+txt += "<p>Platform: " + navigator.platform + "</p>";
+txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
+document.getElementById("demo").innerHTML = txt;
+
+</script>
+<meta http-equiv="refresh" content="30; url = /" />
+This website will refresh in 30 seconds or you can click the button for the home page<br>
+<p>
+
+</div>
+</body>
+</html>
